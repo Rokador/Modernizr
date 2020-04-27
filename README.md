@@ -12,6 +12,14 @@
 
 Modernizr tests which native CSS3 and HTML5 features are available in the current UA and makes the results available to you in two ways: as properties on a global `Modernizr` object, and as classes on the `<html>` element. This information allows you to progressively enhance your pages with a granular level of control over the experience.
 
+## Breaking changes with v4
+
+- These tests got removed:
+
+    - `touchevents`: [discussion](https://github.com/Modernizr/Modernizr/pull/2432) 
+    - `unicode`: [discussion](https://github.com/Modernizr/Modernizr/issues/2468) 
+    - `templatestrings` and `es6/string-templates`: merged into `es6/templatestrings` 
+
 ## New Asynchronous Event Listeners
 
 Often times people want to know when an asynchronous test is done so they can allow their application to react to it.
@@ -101,16 +109,6 @@ and navigating to these two URLs:
 http://localhost:8080/test/unit.html
 http://localhost:8080/test/integration.html
 ```
- 
- 
-## Deprecation
-
-These tests are considered deprecated. They are not included anymore in the default build
-and will be removed in the next major version:
-
-- `touchevents` (in 4.0)
-- `unicode` (in 4.0) 
-
 
 ## Code of Conduct
 
